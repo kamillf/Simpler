@@ -64,6 +64,7 @@
     <Compile Include="Core\Mocks\MockParentTask.cs" />
     <Compile Include="Core\Mocks\MockSecondAttribute.cs" />
     <Compile Include="Core\Mocks\MockSubTask.cs" />
+    <Compile Include="Data\ResultsTest.cs" />
     <Compile Include="Data\Tasks\BuildObjectTest.cs" />
     <Compile Include="Data\Tasks\BuildParametersTest.cs" />
     <Compile Include="Core\Tasks\DisposeTasksTest.cs" />

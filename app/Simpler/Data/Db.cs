@@ -73,6 +73,24 @@ namespace Simpler.Data
             return one;
         }
 
+        public static Results Get(IDbConnection connection, string sql, object values = null, int timeout = 30)
+        {
+            Results results = null;
+
+            var execute = Task.New<ExecuteAction>();
+            execute.In.Connection = connection;
+            execute.In.Sql = sql;
+            execute.In.Values = values;
+            execute.In.Action = command => {
+                command.CommandTimeout = timeout;
+                var reader = command.ExecuteReader();
+                results = new Results(reader);
+            };
+            execute.Execute();
+
+            return results;
+        }
+
         public static int GetResult(IDbConnection connection, string sql, object values = null, int timeout = 30)
         {
             var result = default(int);
