@@ -1,6 +1,7 @@
 require "albacore"
 require "fileutils"
 
+desc "Run tests"
 task :default => :test
 
 namespace :build do
@@ -49,8 +50,8 @@ namespace :bump do
 end
 
 namespace :release do
-  desc "Assemble package contents"
-  task :assemble => ["build:release"] do
+  desc "Prepare package contents"
+  task :prep => ["build:release"] do
     FileUtils.rm_rf "release/template/lib"
     FileUtils.mkdir_p "release/template/lib"
     FileUtils.cp "app/Simpler/bin/Release/Simpler.dll", "release/template/lib"
@@ -70,6 +71,3 @@ namespace :release do
     system "release/tools/NuGet.exe push #{package}"
   end
 end
-
-desc "Run tests"
-task :default => :test
