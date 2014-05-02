@@ -28,7 +28,6 @@ end
 
 def bump(type)
   system "release/tools/please.exe bump #{type} version in app/Simpler/Properties/AssemblyInfo.cs"
-  system "release/tools/please.exe bump #{type} version in release/push.bat"
   system "release/tools/please.exe bump #{type} version in release/template/Simpler.nuspec"
 end
 
@@ -60,12 +59,15 @@ namespace :release do
 
   desc "Pack NuGet package"
   task :pack do
+    FileUtils.rm_rf "release/output"
+    FileUtils.mkdir_p "release/output"
     system "release/tools/NuGet.exe pack release/template/Simpler.nuspec -OutputDirectory release/output -NoPackageAnalysis"
   end
 
   desc "Push Nuget package"
   task :push do
-    system "release/tools/NuGet.exe push release/output/Simpler.2.3.1.nupkg"
+    package = Dir["release/output/Simpler.?.?.?.nupkg"].first
+    system "release/tools/NuGet.exe push #{package}"
   end
 end
 
