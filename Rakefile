@@ -68,6 +68,7 @@ namespace :release do
   desc "Push Nuget package"
   task :push do
     package = Dir["release/output/Simpler.?.?.?.nupkg"].first
-    system "release/tools/NuGet.exe push #{package}"
+    puts "Pushing #{package}"
+    # system "release/tools/NuGet.exe push #{package}"
   end
 end
