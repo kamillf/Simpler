@@ -1,10 +1,10 @@
 ## Checklist
 First Header | Second Header
 ------------ | -------------
-Content from cell 1 | Content from cell 2
+What problem is this trying to solve? | Content from cell 2
 Content in the first column | Content in the second column
 
-| What problem is this trying to solve? | Test |
+|  | Test |
 | 
 	* Do I understand the problem? 
 
