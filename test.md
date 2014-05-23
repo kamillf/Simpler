@@ -1,5 +1,11 @@
 ## Checklist
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 | What problem is this trying to solve? | Test |
+| 
 	* Do I understand the problem? 
 
 		* Consider the [Five Ws](http://en.wikipedia.org/wiki/Five_Ws)
