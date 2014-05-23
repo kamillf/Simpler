@@ -1,5 +1,5 @@
 ## Checklist
-| What problem is this trying to solve? | Test
+| What problem is this trying to solve? | Test |
 	* Do I understand the problem? 
 
 		* Consider the [Five Ws](http://en.wikipedia.org/wiki/Five_Ws)
