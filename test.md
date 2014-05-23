@@ -3,7 +3,7 @@
 
 	* Do I understand the problem? 
 
->		* Consider the [Five Ws](http://en.wikipedia.org/wiki/Five_Ws)
+		* Consider the [Five Ws](http://en.wikipedia.org/wiki/Five_Ws)
 
 		* Who is it about?
 
