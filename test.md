@@ -147,7 +147,7 @@ written by [Jason Jones][author]
 
 ## Review Quality
 
-*Do I have time to give this review the comprehensive assessment it deserves?*
+**Do I have time to give this review the comprehensive assessment it deserves?**
 
 *Is my review purely superficial?*
 
