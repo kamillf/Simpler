@@ -147,15 +147,15 @@ written by [Jason Jones][author]
 
 ## Review Quality
 
-##### Do I have time to give this review the comprehensive assessment it deserves?
+*Do I have time to give this review the comprehensive assessment it deserves?*
 
-##### Is my review purely superficial?
+*Is my review purely superficial?*
 
-##### Am I writing good feedback?
+*Am I writing good feedback?*
 
-> Focus on providing clear actionable feedback that the developer can act on.
->
-> Where applicable, try to provide rationale for requested changes.
+Focus on providing clear actionable feedback that the developer can act on.
+
+Where applicable, try to provide rationale for requested changes.
 
 [dot-net-style]: http://www.amazon.com/Framework-Design-Guidelines-Conventions-Libraries/dp/0321545613
 [ruby-style]: https://github.com/bbatsov/ruby-style-guide
