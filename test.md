@@ -149,9 +149,9 @@ written by [Jason Jones][author]
 
 **Do I have time to give this review the comprehensive assessment it deserves?**
 
-*Is my review purely superficial?*
+**Is my review purely superficial?**
 
-*Am I writing good feedback?*
+**Am I writing good feedback?**
 
 Focus on providing clear actionable feedback that the developer can act on.
 
